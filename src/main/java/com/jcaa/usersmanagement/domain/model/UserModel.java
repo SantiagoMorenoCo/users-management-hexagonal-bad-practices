@@ -17,8 +17,7 @@ import lombok.Data;
 // Con @Value todos los campos serían final y no habría setters.
 // Con @Data + @AllArgsConstructor cualquiera puede hacer userModel.setStatus(BLOCKED)
 // desde fuera del dominio, rompiendo el encapsulamiento.
-@Data
-@AllArgsConstructor
+@Value
 public class UserModel {
 
   UserId id;
